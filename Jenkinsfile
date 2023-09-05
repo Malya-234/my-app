@@ -26,9 +26,9 @@ node{
    sh 'docker push smalya/webapp'
    }
    stage('Nexus Image Push'){
-   sh "docker login -u admin -p admin123 100.25.110.251:8083"
-   sh "docker tag smalya/webapp 100.25.110.251:8083/dockerprivate:1.0.0"
-   sh 'docker push 100.25.110.251:8083/dockerprivate:1.0.0'
+   sh "docker login -u admin -p admin123 54.160.104.166:8083"
+   sh "docker tag smalya/webapp 54.160.104.166:8083/dockerprivate:1.0.0"
+   sh 'docker push 54.160.104.166:8083/dockerprivate:1.0.0'
    }
     
        stage('Remove Previous Container'){
